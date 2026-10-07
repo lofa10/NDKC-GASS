@@ -128,21 +128,32 @@
                 
                 <!-- Left: NDKC Seal & Title -->
                 <a href="#" class="flex items-center gap-3 sm:gap-4 shrink-0 group">
-                    <div class="relative flex items-center justify-center shrink-0">
-                        <img src="ndkc_logo_clean.jpg" 
-                             onerror="this.onerror=null; this.src='ndkc_logo_clean.png';" 
+                    <div class="relative flex items-center justify-center shrink-0 w-12 sm:w-14 h-12 sm:h-14 bg-emerald-50 rounded-full overflow-hidden border border-emerald-200">
+                        <img src="ndkc no bg.jpg" 
+                             onerror="this.onerror=null; this.src='ndkc_logo_clean.jpg';" 
                              alt="Notre Dame of Kidapawan College Seal" 
                              loading="eager"
                              decoding="sync"
-                             class="h-12 sm:h-14 w-auto object-contain clean-seal filter drop-shadow-md transition-transform duration-200 group-hover:scale-105">
+                             class="w-full h-full object-contain clean-seal filter drop-shadow-md transition-transform duration-200 group-hover:scale-105">
                     </div>
                     <span class="font-cinzel text-ndkcGreen font-extrabold text-base sm:text-xl md:text-2xl tracking-tight uppercase leading-none group-hover:text-emerald-700 transition">
                         NOTRE DAME OF KIDAPAWAN COLLEGE
                     </span>
                 </a>
 
-                <!-- Right: Quick Utilities -->
-                <div class="flex items-center gap-2 sm:gap-3 text-slate-600">
+                <!-- Right: Quick Utilities with Marist Logo -->
+                <div class="flex items-center gap-3 text-slate-600">
+                    <!-- Marist Logo Badge in Header -->
+                    <div class="flex bg-emerald-50 border-2 border-emerald-400 text-ndkcGreenDark px-3 py-1 rounded-xl items-center gap-2">
+                        <div class="w-7 h-7 bg-white rounded-full overflow-hidden flex items-center justify-center shrink-0 border border-emerald-300">
+                            <img src="MARIST LOGO.png" onerror="this.onerror=null; this.src='MARIST LOGO_2.png';" alt="Marist Emblem" class="w-full h-full object-contain">
+                        </div>
+                        <div class="text-left border-l border-emerald-300 pl-2">
+                            <span class="block text-[8px] uppercase font-black tracking-widest text-emerald-700 leading-none">A MARIST</span>
+                            <span class="block text-[10px] uppercase font-black text-ndkcGreenDark leading-none">SCHOOL</span>
+                        </div>
+                    </div>
+
                     <button onclick="document.getElementById('prioritySearch').focus()" title="Search Portal" class="w-9 h-9 flex items-center justify-center rounded-lg hover:bg-slate-100 text-slate-600 transition">
                         <i class="fa-solid fa-magnifying-glass text-sm"></i>
                     </button>
@@ -151,9 +162,6 @@
                     </a>
                     <a href="https://youtube.com" target="_blank" class="w-9 h-9 bg-ndkcGreen text-white rounded-lg flex items-center justify-center hover:bg-emerald-700 transition shadow-sm">
                         <i class="fa-brands fa-youtube text-sm"></i>
-                    </a>
-                    <a href="#about" class="w-9 h-9 bg-ndkcGreen text-white rounded-lg flex items-center justify-center hover:bg-emerald-700 transition shadow-sm">
-                        <i class="fa-solid fa-phone text-sm"></i>
                     </a>
                 </div>
 
@@ -171,18 +179,11 @@
                     <a href="#safety" class="border-2 border-emerald-400/80 bg-white/10 hover:bg-emerald-500 hover:border-emerald-300 text-white transition px-3.5 py-1.5 rounded-xl shadow-md backdrop-blur-md">Safety & Access</a>
                     <a href="#guidelines" class="border-2 border-emerald-400/80 bg-white/10 hover:bg-emerald-500 hover:border-emerald-300 text-white transition px-3.5 py-1.5 rounded-xl shadow-md backdrop-blur-md">Guidelines</a>
                     <a href="#workflow" class="border-2 border-emerald-400/80 bg-white/10 hover:bg-emerald-500 hover:border-emerald-300 text-white transition px-3.5 py-1.5 rounded-xl shadow-md backdrop-blur-md">Workflow</a>
+                    <a href="#types" class="border-2 border-emerald-400/80 bg-white/10 hover:bg-emerald-500 hover:border-emerald-300 text-white transition px-3.5 py-1.5 rounded-xl shadow-md backdrop-blur-md">Repair Types</a>
                     <a href="#roles" class="border-2 border-emerald-400/80 bg-white/10 hover:bg-emerald-500 hover:border-emerald-300 text-white transition px-3.5 py-1.5 rounded-xl shadow-md backdrop-blur-md">Roles</a>
                 </nav>
 
                 <div class="flex items-center gap-3 ml-auto">
-                    <div class="hidden sm:flex bg-emerald-950/80 border-2 border-emerald-400 text-white px-3 py-1 rounded-xl items-center gap-2 backdrop-blur-md">
-                        <img src="MARIST LOGO_2.png" onerror="this.onerror=null; this.src='MARIST LOGO.png';" alt="Marist Emblem" class="h-6 w-auto object-contain">
-                        <div class="text-left border-l border-emerald-500 pl-2">
-                            <span class="block text-[8px] uppercase font-black tracking-widest text-emerald-300 leading-none">A MARIST</span>
-                            <span class="block text-[10px] uppercase font-black text-white leading-none">SCHOOL</span>
-                        </div>
-                    </div>
-
                     <button onclick="toggleMobileMenu()" class="xl:hidden p-2 text-white border-2 border-emerald-400 bg-white/10 hover:bg-emerald-500 transition focus:outline-none rounded-xl">
                         <i class="fa-solid fa-bars text-lg"></i>
                     </button>
@@ -199,6 +200,7 @@
             <a href="#safety" onclick="toggleMobileMenu()" class="block py-2 px-4 rounded-xl border border-emerald-500 bg-white/5 hover:bg-emerald-600">Safety & Access</a>
             <a href="#guidelines" onclick="toggleMobileMenu()" class="block py-2 px-4 rounded-xl border border-emerald-500 bg-white/5 hover:bg-emerald-600">Repair Request Guidelines</a>
             <a href="#workflow" onclick="toggleMobileMenu()" class="block py-2 px-4 rounded-xl border border-emerald-500 bg-white/5 hover:bg-emerald-600">Workflow & Priorities</a>
+            <a href="#types" onclick="toggleMobileMenu()" class="block py-2 px-4 rounded-xl border border-emerald-500 bg-white/5 hover:bg-emerald-600">Types of Repair Requests</a>
             <a href="#roles" onclick="toggleMobileMenu()" class="block py-2 px-4 rounded-xl border border-emerald-500 bg-white/5 hover:bg-emerald-600">Roles & Responsibilities</a>
         </div>
     </header>
@@ -640,18 +642,264 @@
             </div>
         </section>
 
-        <!-- SECTION 6: WORKFLOW & PRIORITY MATRIX -->
-        <section id="workflow" class="space-y-12">
-            <div class="border-b-2 border-slate-200 pb-4 flex justify-between items-center">
+        <!-- SECTION 6: WORKFLOW & ROADMAP -->
+        <section id="workflow" class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden p-8 sm:p-12 space-y-10">
+            <div class="border-b-2 border-emerald-600 pb-4 flex justify-between items-center">
                 <div class="flex items-center gap-3">
                     <div class="w-3 h-8 bg-ndkcGreen rounded-full"></div>
-                    <h2 class="font-heading font-black text-2xl sm:text-3xl uppercase tracking-tight text-slate-900">REPAIR WORKFLOW & PRIORITY MATRIX</h2>
+                    <h2 class="font-heading font-black text-2xl sm:text-3xl uppercase tracking-tight text-slate-900">REPAIR REQUEST WORKFLOW</h2>
+                </div>
+                <i class="fa-solid fa-road text-ndkcGreen text-3xl"></i>
+            </div>
+
+            <div class="space-y-3">
+                <h3 class="font-heading font-extrabold text-xl text-slate-900 uppercase tracking-wide flex items-center gap-2">
+                    <i class="fa-solid fa-route text-emerald-600"></i> 10-Step Repair Request Process Roadmap
+                </h3>
+                <p class="text-sm text-slate-600 font-medium">Follow our systematic 10-step process along the campus maintenance roadmap from issue identification to final request closure.</p>
+            </div>
+
+            <!-- 10-STEP ROADMAP GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 pt-4">
+                
+                <!-- Step 1 -->
+                <div class="bg-gradient-to-br from-emerald-950 via-ndkcGreenDark to-ndkcGreen text-white p-6 rounded-3xl shadow-xl border-2 border-emerald-500/60 flex flex-col justify-between space-y-4 hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-emerald-500/30 text-emerald-200 text-xs font-heading font-black px-3 py-1 rounded-full uppercase tracking-wider border border-emerald-400/30">Step 1</span>
+                        <div class="w-12 h-12 bg-emerald-500 text-ndkcGreenDark rounded-2xl flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-magnifying-glass-location"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="font-heading font-bold text-white text-sm uppercase">Identify Problem</h4>
+                        <p class="text-xs text-slate-200 font-medium leading-relaxed">Spot and inspect facility or maintenance issues.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-gradient-to-br from-emerald-950 via-ndkcGreenDark to-ndkcGreen text-white p-6 rounded-3xl shadow-xl border-2 border-emerald-500/60 flex flex-col justify-between space-y-4 hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-emerald-500/30 text-emerald-200 text-xs font-heading font-black px-3 py-1 rounded-full uppercase tracking-wider border border-emerald-400/30">Step 2</span>
+                        <div class="w-12 h-12 bg-emerald-500 text-ndkcGreenDark rounded-2xl flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-file-pen"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="font-heading font-bold text-white text-sm uppercase">Submit Request</h4>
+                        <p class="text-xs text-slate-200 font-medium leading-relaxed">Submit Repair Request Form via web portal or slip.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-gradient-to-br from-emerald-950 via-ndkcGreenDark to-ndkcGreen text-white p-6 rounded-3xl shadow-xl border-2 border-emerald-500/60 flex flex-col justify-between space-y-4 hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-emerald-500/30 text-emerald-200 text-xs font-heading font-black px-3 py-1 rounded-full uppercase tracking-wider border border-emerald-400/30">Step 3</span>
+                        <div class="w-12 h-12 bg-emerald-500 text-ndkcGreenDark rounded-2xl flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="font-heading font-bold text-white text-sm uppercase">Log Request</h4>
+                        <p class="text-xs text-slate-200 font-medium leading-relaxed">GASS receives & logs request into tracking system with unique ID.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-gradient-to-br from-emerald-950 via-ndkcGreenDark to-ndkcGreen text-white p-6 rounded-3xl shadow-xl border-2 border-emerald-500/60 flex flex-col justify-between space-y-4 hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-emerald-500/30 text-emerald-200 text-xs font-heading font-black px-3 py-1 rounded-full uppercase tracking-wider border border-emerald-400/30">Step 4</span>
+                        <div class="w-12 h-12 bg-emerald-500 text-ndkcGreenDark rounded-2xl flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="font-heading font-bold text-white text-sm uppercase">Site Assessment</h4>
+                        <p class="text-xs text-slate-200 font-medium leading-relaxed">Site inspection and evaluation by maintenance team.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="bg-gradient-to-br from-emerald-950 via-ndkcGreenDark to-ndkcGreen text-white p-6 rounded-3xl shadow-xl border-2 border-emerald-500/60 flex flex-col justify-between space-y-4 hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-emerald-500/30 text-emerald-200 text-xs font-heading font-black px-3 py-1 rounded-full uppercase tracking-wider border border-emerald-400/30">Step 5</span>
+                        <div class="w-12 h-12 bg-emerald-500 text-ndkcGreenDark rounded-2xl flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="font-heading font-bold text-white text-sm uppercase">Prioritize & Approve</h4>
+                        <p class="text-xs text-slate-200 font-medium leading-relaxed">Prioritize and approve request (Emergency, Urgent, Routine).</p>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="bg-gradient-to-br from-emerald-950 via-ndkcGreenDark to-ndkcGreen text-white p-6 rounded-3xl shadow-xl border-2 border-emerald-500/60 flex flex-col justify-between space-y-4 hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-emerald-500/30 text-emerald-200 text-xs font-heading font-black px-3 py-1 rounded-full uppercase tracking-wider border border-emerald-400/30">Step 6</span>
+                        <div class="w-12 h-12 bg-emerald-500 text-ndkcGreenDark rounded-2xl flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="font-heading font-bold text-white text-sm uppercase">Schedule Repair</h4>
+                        <p class="text-xs text-slate-200 font-medium leading-relaxed">Schedule repair works and allocate skilled technicians.</p>
+                    </div>
+                </div>
+
+                <!-- Step 7 -->
+                <div class="bg-gradient-to-br from-emerald-950 via-ndkcGreenDark to-ndkcGreen text-white p-6 rounded-3xl shadow-xl border-2 border-emerald-500/60 flex flex-col justify-between space-y-4 hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-emerald-500/30 text-emerald-200 text-xs font-heading font-black px-3 py-1 rounded-full uppercase tracking-wider border border-emerald-400/30">Step 7</span>
+                        <div class="w-12 h-12 bg-emerald-500 text-ndkcGreenDark rounded-2xl flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="font-heading font-bold text-white text-sm uppercase">Execution</h4>
+                        <p class="text-xs text-slate-200 font-medium leading-relaxed">Repair and maintenance execution following standards.</p>
+                    </div>
+                </div>
+
+                <!-- Step 8 -->
+                <div class="bg-gradient-to-br from-emerald-950 via-ndkcGreenDark to-ndkcGreen text-white p-6 rounded-3xl shadow-xl border-2 border-emerald-500/60 flex flex-col justify-between space-y-4 hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-emerald-500/30 text-emerald-200 text-xs font-heading font-black px-3 py-1 rounded-full uppercase tracking-wider border border-emerald-400/30">Step 8</span>
+                        <div class="w-12 h-12 bg-emerald-500 text-ndkcGreenDark rounded-2xl flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-square-check"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="font-heading font-bold text-white text-sm uppercase">Final Inspection</h4>
+                        <p class="text-xs text-slate-200 font-medium leading-relaxed">Final inspection conducted by GASS supervisor.</p>
+                    </div>
+                </div>
+
+                <!-- Step 9 -->
+                <div class="bg-gradient-to-br from-emerald-950 via-ndkcGreenDark to-ndkcGreen text-white p-6 rounded-3xl shadow-xl border-2 border-emerald-500/60 flex flex-col justify-between space-y-4 hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-emerald-500/30 text-emerald-200 text-xs font-heading font-black px-3 py-1 rounded-full uppercase tracking-wider border border-emerald-400/30">Step 9</span>
+                        <div class="w-12 h-12 bg-emerald-500 text-ndkcGreenDark rounded-2xl flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="font-heading font-bold text-white text-sm uppercase">Office Acceptance</h4>
+                        <p class="text-xs text-slate-200 font-medium leading-relaxed">Office acceptance confirming satisfactory completion.</p>
+                    </div>
+                </div>
+
+                <!-- Step 10 -->
+                <div class="bg-gradient-to-br from-emerald-950 via-ndkcGreenDark to-ndkcGreen text-white p-6 rounded-3xl shadow-xl border-2 border-emerald-500/60 flex flex-col justify-between space-y-4 hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-center">
+                        <span class="bg-emerald-500/30 text-emerald-200 text-xs font-heading font-black px-3 py-1 rounded-full uppercase tracking-wider border border-emerald-400/30">Step 10</span>
+                        <div class="w-12 h-12 bg-emerald-500 text-ndkcGreenDark rounded-2xl flex items-center justify-center text-xl shadow-md">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-1">
+                        <h4 class="font-heading font-bold text-white text-sm uppercase">Request Closed</h4>
+                        <p class="text-xs text-slate-200 font-medium leading-relaxed">Request closed and maintenance ticket archived.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION: TYPES OF REPAIR REQUESTS -->
+        <section id="types" class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden p-8 sm:p-12 space-y-10">
+            <div class="border-b-2 border-emerald-600 pb-4 flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-3 h-8 bg-ndkcGreen rounded-full"></div>
+                    <h2 class="font-heading font-black text-2xl sm:text-3xl uppercase tracking-tight text-slate-900">TYPES OF REPAIR REQUESTS</h2>
+                </div>
+                <i class="fa-solid fa-screwdriver-wrench text-ndkcGreen text-3xl"></i>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- A. Emergency Repairs -->
+                <div class="bg-red-50/70 border border-red-200 p-6 rounded-2xl space-y-4 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3 text-red-800 font-heading font-extrabold text-lg border-b border-red-200 pb-2">
+                            <i class="fa-solid fa-triangle-exclamation text-red-600 text-xl"></i>
+                            <span>A. Emergency Repairs</span>
+                        </div>
+                        <p class="text-xs text-slate-700 font-medium leading-relaxed">
+                            Repairs that pose an immediate threat to life, safety, or property.
+                        </p>
+                        <div class="space-y-1">
+                            <span class="block text-xs font-heading font-bold text-red-900 uppercase">Examples:</span>
+                            <ul class="text-xs text-slate-700 space-y-1.5 list-disc list-inside font-medium">
+                                <li>Electrical short circuits</li>
+                                <li>Broken water pipes causing flooding</li>
+                                <li>Structural damage</li>
+                                <li>Fire safety equipment malfunction</li>
+                                <li>Broken doors that compromise security</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-red-200/60 bg-red-100/60 -mx-6 -mb-6 p-4 rounded-b-2xl">
+                        <span class="block text-[11px] font-heading font-black text-red-900 uppercase">Response Time:</span>
+                        <p class="text-xs text-red-800 font-semibold mt-0.5">Immediate (within 24 hours whenever possible)</p>
+                    </div>
+                </div>
+
+                <!-- B. Urgent Repairs -->
+                <div class="bg-amber-50/70 border border-amber-200 p-6 rounded-2xl space-y-4 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3 text-amber-900 font-heading font-extrabold text-lg border-b border-amber-200 pb-2">
+                            <i class="fa-solid fa-bolt text-amber-600 text-xl"></i>
+                            <span>B. Urgent Repairs</span>
+                        </div>
+                        <p class="text-xs text-slate-700 font-medium leading-relaxed">
+                            Repairs that significantly affect office operations but do not present immediate danger.
+                        </p>
+                        <div class="space-y-1">
+                            <span class="block text-xs font-heading font-bold text-amber-950 uppercase">Examples:</span>
+                            <ul class="text-xs text-slate-700 space-y-1.5 list-disc list-inside font-medium">
+                                <li>Air-conditioning failure</li>
+                                <li>Plumbing leaks</li>
+                                <li>Broken windows</li>
+                                <li>Damaged office furniture essential for work</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-amber-200/60 bg-amber-100/60 -mx-6 -mb-6 p-4 rounded-b-2xl">
+                        <span class="block text-[11px] font-heading font-black text-amber-950 uppercase">Response Time:</span>
+                        <p class="text-xs text-amber-900 font-semibold mt-0.5">2–5 working days</p>
+                    </div>
+                </div>
+
+                <!-- C. Routine Repairs -->
+                <div class="bg-emerald-50/70 border border-emerald-200 p-6 rounded-2xl space-y-4 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3 text-emerald-900 font-heading font-extrabold text-lg border-b border-emerald-200 pb-2">
+                            <i class="fa-solid fa-circle-check text-emerald-600 text-xl"></i>
+                            <span>C. Routine Repairs</span>
+                        </div>
+                        <p class="text-xs text-slate-700 font-medium leading-relaxed">
+                            Minor repairs and preventive maintenance.
+                        </p>
+                        <div class="space-y-1">
+                            <span class="block text-xs font-heading font-bold text-emerald-950 uppercase">Examples:</span>
+                            <ul class="text-xs text-slate-700 space-y-1.5 list-disc list-inside font-medium">
+                                <li>Replacement of light bulbs</li>
+                                <li>Door adjustments</li>
+                                <li>Cabinet repairs</li>
+                                <li>Painting touch-ups</li>
+                                <li>Ceiling tile replacement</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-emerald-200/60 bg-emerald-100/60 -mx-6 -mb-6 p-4 rounded-b-2xl">
+                        <span class="block text-[11px] font-heading font-black text-emerald-950 uppercase">Response Time:</span>
+                        <p class="text-xs text-emerald-900 font-semibold mt-0.5">Within 10–15 working days depending on workload and availability of materials.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- SECTION 7: ROLES AND RESPONSIBILITIES -->
-        <section id="roles" class="bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden p-8 sm:p-12 space-y-10">
+        <section id="roles" class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden p-8 sm:p-12 space-y-10">
             <div class="border-b-2 border-emerald-600 pb-4 flex justify-between items-center">
                 <div class="flex items-center gap-3">
                     <div class="w-3 h-8 bg-ndkcGreen rounded-full"></div>
@@ -659,23 +907,110 @@
                 </div>
                 <i class="fa-solid fa-user-gear text-ndkcGreen text-3xl"></i>
             </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 1. Requesting Office -->
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl space-y-4 shadow-sm">
+                    <div class="flex items-center gap-3 text-ndkcGreen font-heading font-extrabold text-lg border-b border-slate-200 pb-2">
+                        <i class="fa-solid fa-building-user text-emerald-600 text-xl"></i>
+                        <span>1. Requesting Office</span>
+                    </div>
+                    <ul class="text-xs text-slate-700 space-y-3 font-medium">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                            <span>Report facility issues promptly.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                            <span>Submit a complete Repair Request Form.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                            <span>Provide access to the work area.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                            <span>Confirm satisfactory completion of repairs.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 2. GASS Office -->
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl space-y-4 shadow-sm">
+                    <div class="flex items-center gap-3 text-ndkcGreen font-heading font-extrabold text-lg border-b border-slate-200 pb-2">
+                        <i class="fa-solid fa-building-shield text-emerald-600 text-xl"></i>
+                        <span>2. GASS Office</span>
+                    </div>
+                    <ul class="text-xs text-slate-700 space-y-3 font-medium">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                            <span>Receive and record repair requests.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                            <span>Conduct inspections and determine repair requirements.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                            <span>Prioritize, schedule, and monitor repair activities.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                            <span>Coordinate materials, manpower, and external contractors when necessary.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 3. Maintenance Personnel -->
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl space-y-4 shadow-sm">
+                    <div class="flex items-center gap-3 text-ndkcGreen font-heading font-extrabold text-lg border-b border-slate-200 pb-2">
+                        <i class="fa-solid fa-helmet-safety text-emerald-600 text-xl"></i>
+                        <span>3. Maintenance Personnel</span>
+                    </div>
+                    <ul class="text-xs text-slate-700 space-y-3 font-medium">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                            <span>Perform repairs safely and efficiently.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                            <span>Follow institutional standards and safety protocols.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 mt-0.5"></i>
+                            <span>Report additional defects identified during repair works.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Key Reminder & Motto -->
+            <div class="space-y-6 pt-6 border-t border-slate-200">
+                <div class="bg-emerald-950 text-white p-6 rounded-2xl border-2 border-emerald-500 shadow-md space-y-2">
+                    <div class="flex items-center gap-2 text-emerald-300 font-heading font-black text-sm uppercase">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Key Reminder
+                    </div>
+                    <p class="text-xs text-slate-200 font-medium leading-relaxed">
+                        Emergency repairs should be reported immediately to GASS (or Campus Security after office hours), followed by the submission of the Repair Request Form on the next working day.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-r from-ndkcGreenDark via-ndkcGreen to-ndkcGreenDark text-white p-6 rounded-2xl text-center space-y-2 shadow-lg border-2 border-emerald-400">
+                    <h3 class="font-heading font-black text-sm sm:text-base text-white uppercase tracking-wider">
+                        Motto: SAFE CAMPUS | STRONG COMMUNITY | EXCELLENCE TOGETHER
+                    </h3>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER (NO LOGOS AS REQUESTED) -->
     <footer class="bg-footer-ndkc1 text-slate-200 py-16 border-t-8 border-emerald-500 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 relative z-10">
-            <div class="flex justify-center items-center gap-8 bg-transparent">
-                <img src="ndkc_logo_clean.jpg" onerror="this.onerror=null; this.src='ndkc_logo_clean.png';" alt="NDKC Logo" class="h-28 sm:h-36 w-auto object-contain clean-seal bg-transparent border-none outline-none filter drop-shadow-2xl">
-                <img src="MARIST LOGO_2.png" onerror="this.onerror=null; this.src='MARIST LOGO.png';" alt="Marist Logo" class="h-24 sm:h-32 w-auto object-contain bg-transparent border-none outline-none filter drop-shadow-2xl">
-            </div>
-            <p class="text-emerald-100 text-lg sm:text-xl max-w-2xl mx-auto font-medium leading-relaxed drop-shadow">
-                Your cooperation makes our campus safe, functional, and welcoming.
-            </p>
-            <div class="pt-8 border-t border-emerald-900/80 text-xs text-slate-300 space-y-2">
-                <p class="font-heading font-black text-sm text-white uppercase tracking-wider">NOTRE DAME OF KIDAPAWAN COLLEGE</p>
-                <p class="text-emerald-200">City of Kidapawan | General Administrative Support Services (GASS) Office</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
+            <div class="space-y-2">
+                <p class="font-heading font-black text-sm sm:text-base text-white uppercase tracking-wider">NOTRE DAME OF KIDAPAWAN COLLEGE</p>
+                <p class="text-emerald-200 text-xs sm:text-sm">City of Kidapawan | General Administrative Support Services (GASS) Office</p>
                 <p class="text-slate-400 text-xs pt-2">&copy; 2026 Notre Dame of Kidapawan College. All rights reserved.</p>
             </div>
         </div>
@@ -690,7 +1025,9 @@
             
             <div class="bg-ndkcGreen text-white p-6 flex justify-between items-center border-b-4 border-emerald-500">
                 <div class="flex items-center gap-3">
-                    <img src="ndkc_logo_clean.jpg" onerror="this.onerror=null; this.src='ndkc_logo_clean.png';" alt="NDKC Logo" class="h-10 w-auto clean-seal">
+                    <div class="w-10 h-10 bg-white rounded-full overflow-hidden flex items-center justify-center border border-emerald-300">
+                        <img src="ndkc no bg.jpg" onerror="this.onerror=null; this.src='ndkc_logo_clean.jpg';" alt="NDKC Logo" class="w-full h-full object-contain clean-seal">
+                    </div>
                     <div>
                         <h3 class="font-heading font-black text-base uppercase">GASS FACILITY REPAIR REQUEST TICKET</h3>
                         <p class="text-xs text-emerald-200">Official Google Form Submission Portal</p>
@@ -821,8 +1158,15 @@
             }
         });
 
+        let mobileMenuOpen = false;
         function toggleMobileMenu() {
-            document.getElementById('mobileMenu').classList.toggle('hidden');
+            const menu = document.getElementById('mobileMenu');
+            mobileMenuOpen = !mobileMenuOpen;
+            if (mobileMenuOpen) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
         }
 
         function openRequestModal() {
@@ -853,6 +1197,7 @@
             isSubmitting = true;
             const btnText = document.getElementById('submitBtnText');
             btnText.innerText = 'Transmitting...';
+            document.includeElement = document.getElementById('submitBtn');
             document.getElementById('submitBtn').disabled = true;
 
             setTimeout(() => {
