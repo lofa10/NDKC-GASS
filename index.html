@@ -124,27 +124,19 @@
         
         <!-- WHITE TOP HEADER BAR -->
         <div class="bg-white py-3 px-4 sm:px-8 border-b border-slate-100">
-            <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="max-w-7xl mx-auto flex justify-between items-center gap-4">
                 
-                <!-- Left: NDKC Seal & Title -->
-                <a href="#" class="flex items-center gap-3 sm:gap-4 shrink-0 group">
-                    <div class="relative flex items-center justify-center shrink-0 w-12 sm:w-14 h-12 sm:h-14 bg-emerald-50 rounded-full overflow-hidden border border-emerald-200">
-                        <img src="ndkc no bg.jpg" 
-                             onerror="this.onerror=null; this.src='ndkc_logo_clean.jpg';" 
-                             alt="Notre Dame of Kidapawan College Seal" 
-                             loading="eager"
-                             decoding="sync"
-                             class="w-full h-full object-contain clean-seal filter drop-shadow-md transition-transform duration-200 group-hover:scale-105">
-                    </div>
-                    <span class="font-cinzel text-ndkcGreen font-extrabold text-base sm:text-xl md:text-2xl tracking-tight uppercase leading-none group-hover:text-emerald-700 transition">
+                <!-- Left: Enlarged & Redesigned College Title taking up the space -->
+                <a href="#" class="group flex items-center">
+                    <span class="font-cinzel text-ndkcGreen font-black text-lg sm:text-2xl md:text-3xl lg:text-4xl tracking-tight uppercase leading-tight group-hover:text-emerald-700 transition drop-shadow-sm">
                         NOTRE DAME OF KIDAPAWAN COLLEGE
                     </span>
                 </a>
 
                 <!-- Right: Quick Utilities with Marist Logo -->
-                <div class="flex items-center gap-3 text-slate-600">
+                <div class="flex items-center gap-3 text-slate-600 shrink-0">
                     <!-- Marist Logo Badge in Header -->
-                    <div class="flex bg-emerald-50 border-2 border-emerald-400 text-ndkcGreenDark px-3 py-1 rounded-xl items-center gap-2">
+                    <div class="flex bg-emerald-50 border-2 border-emerald-400 text-ndkcGreenDark px-3 py-1.5 rounded-xl items-center gap-2 shadow-sm">
                         <div class="w-7 h-7 bg-white rounded-full overflow-hidden flex items-center justify-center shrink-0 border border-emerald-300">
                             <img src="MARIST LOGO.png" onerror="this.onerror=null; this.src='MARIST LOGO_2.png';" alt="Marist Emblem" class="w-full h-full object-contain">
                         </div>
@@ -1005,7 +997,7 @@
 
     </main>
 
-    <!-- FOOTER (NO LOGOS AS REQUESTED) -->
+    <!-- FOOTER -->
     <footer class="bg-footer-ndkc1 text-slate-200 py-16 border-t-8 border-emerald-500 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
             <div class="space-y-2">
@@ -1201,7 +1193,10 @@
             document.getElementById('submitBtn').disabled = true;
 
             setTimeout(() => {
-                alert('REPAIR REQUEST SUCCESSFULLY SUBMITTED!\n\nTicket Number: ' + currentTicket + '\nYour response has been successfully recorded.');
+                alert('REPAIR REQUEST SUCCESSFULLY SUBMITTED!
+
+Ticket Number: ' + currentTicket + '
+Your response has been successfully recorded.');
                 closeRequestModal();
                 document.getElementById('repairTicketForm').reset();
                 document.getElementById('submitBtn').disabled = false;
@@ -1210,6 +1205,7 @@
             }, 1000);
         }
 
+        let isSubmitting = false;
         function handleIframeLoad() {
             if (isSubmitting) {
                 console.log('Google Form response recorded successfully.');
