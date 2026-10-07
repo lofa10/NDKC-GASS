@@ -1189,23 +1189,24 @@
             isSubmitting = true;
             const btnText = document.getElementById('submitBtnText');
             btnText.innerText = 'Transmitting...';
-            document.includeElement = document.getElementById('submitBtn');
-            document.getElementById('submitBtn').disabled = true;
+            
+            const submitBtn = document.getElementById('submitBtn');
+            if (submitBtn) {
+                submitBtn.disabled = true;
+            }
 
             setTimeout(() => {
-                alert('REPAIR REQUEST SUCCESSFULLY SUBMITTED!
-
-Ticket Number: ' + currentTicket + '
-Your response has been successfully recorded.');
+                alert('REPAIR REQUEST SUCCESSFULLY SUBMITTED!\n\nTicket Number: ' + currentTicket + '\nYour response has been successfully recorded.');
                 closeRequestModal();
                 document.getElementById('repairTicketForm').reset();
-                document.getElementById('submitBtn').disabled = false;
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                }
                 btnText.innerText = 'Submit Request';
                 isSubmitting = false;
             }, 1000);
         }
 
-        let isSubmitting = false;
         function handleIframeLoad() {
             if (isSubmitting) {
                 console.log('Google Form response recorded successfully.');
